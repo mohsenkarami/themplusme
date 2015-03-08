@@ -1,0 +1,189 @@
+/*********************************************************************/
+/* General */
+/*********************************************************************/
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	color: rgba(0,0,0, 0.9);
+	background-color: #E9E7E9;
+}
+
+/***********************************************************/
+/* Links */
+/***********************************************************/
+a,
+.link {color: rgba(140, 195, 64, 1);}
+
+a:hover {text-decoration: underline;}
+a:visited{color: rgba(140, 195, 64, 1);}
+
+/***********************************************************/
+/* Placeholders */
+/***********************************************************/
+::-webkit-input-placeholder {color: rgba(80, 60, 40, 0.5);}
+::-moz-placeholder {color: rgba(80, 60, 40, 0.5);}
+:-ms-input-placeholder {color: rgba(80, 60, 40, 0.5);}
+
+/***********************************************************/
+/* Usefull */
+/***********************************************************/
+.hide {display: none!important;}
+
+.vhide {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0 0 0 0) !important;
+}
+
+.wrapper {
+	max-width: 1100px;
+	margin: 0 auto
+}
+
+/*********************************************************************/
+/* .mainHeader */
+/*********************************************************************/
+.mainHeader {
+	color: #fff;
+	background-color: #7E2124;
+	margin-bottom: 50px;
+}
+
+.mainHeader h1 {
+	float: left;
+	font-size: 2em;
+	word-spacing: 5px;
+	padding: 20px 0;
+	font-weight: 100;
+}
+
+.mainHeader .mainNav {float: right;}
+
+.mainNav li {
+	float: left;
+	list-style: none;
+}
+
+.mainNav a {
+	transition: all 0.5s ease-in-out;
+	display: block;
+	font-size: 2em;
+	padding: 20px;
+	color: #fff;
+}
+
+.mainNav a:hover {
+	background-color: rgba(255,255,255, 0.3);
+}
+
+/*********************************************************************/
+/* .portfolio */
+/*********************************************************************/
+.portfolio header {position: relative;}
+
+.portfolio h2 {
+	margin-bottom: 50px;
+	font-size: 10em;
+	font-weight: 100;
+	text-transform: lowercase;
+	text-align: center;
+
+}
+
+.portfolio h2 > span {
+	position: relative;
+	display: inline-block;
+	padding: 0 15px;
+	background-color: #E9E7E9;
+	z-index: 1;
+}
+
+.portfolio hr {
+	position: absolute;
+	top: 46px;
+	width: 100%;
+	border-top-color: #000;
+}
+
+.portfolio li {list-style: none;}
+
+/***********************************************************/
+/* .work */
+/***********************************************************/
+.work {
+	position: relative;
+	margin-bottom: 100px;
+	overflow: hidden;
+}
+
+.work h3 {
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	top: -90px;
+	left: 0;
+	right: 0;
+	padding: 30px 20px;
+	color: #fff;
+	font-size: 3em;
+	font-weight: 100;
+	overflow: hidden;
+}
+
+.work:hover h3 {top: 0;}
+
+.work .picture > img {width: 100%;}
+
+.work .partners {
+	transition: all 0.5s ease-in-out;
+	position: absolute;
+	right: 0;
+	bottom: -150px;
+	left: 0;
+	padding: 20px;
+	color: #7E2124;
+	font-size: 3em;
+	font-weight: 100;
+	background-color: rgba(255,255,255, 0.6);
+	overflow: hidden;
+}
+
+.work:hover .partners {
+	bottom: 0;
+}
+
+.partners li {
+	transition: all 0.9s ease-in-out;
+	float: right;
+	width: 80px;
+	height: 80px;
+	border-radius: 100%;
+	margin-left: 0;
+	color: #7E2124;
+	box-shadow: 3px 3px 3px rgba(0,0,0, 0.4);
+	overflow: hidden;
+	opacity: 0;
+}
+
+.work:hover .partners li {
+	opacity: 1;
+	margin-left: 40px;
+}
+
+.partners li >img {width: 100%;}
+
+
+/*********************************************************************/
+/* .mainFooter */
+/*********************************************************************/
+.mainFooter p {
+	padding: 30px;
+	font-size: 1.4em;
+	font-weight: 100;
+	text-align: center;
+}
+
